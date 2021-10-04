@@ -10,7 +10,7 @@
 #
 ###################
 import math
-def main():
+def prompt():
     print("--------------------------------------------------------------------")
     print("PYTHON PROGRAM TO FIND AREA AND PERIMETER OF AN EQUILATERAL TRIANGLE")
     print("--------------------------------------------------------------------")
@@ -26,4 +26,5 @@ def main():
     print("Altitude of an Equilateral Triangle =",'%.2f' % (altitude))
     print("--------------------------------------------------------------------")
 
-main()
+if __name__ == '__main__':
+    prompt()

@@ -10,7 +10,7 @@
 #
 ###################
 import math
-def main():
+def prompt():
     print("-------------------------------------------------------")
     print("PYTHON PROGRAM TO FIND PERIMETER AND AREA OF A TRIANGLE")
     print("-------------------------------------------------------")
@@ -26,4 +26,5 @@ def main():
     print("The Area of a Triangle =",'%.2f' % (area))
     print("-------------------------------------------------------")
 
-main()
+if __name__ == '__main__':
+    prompt()

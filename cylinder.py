@@ -10,7 +10,7 @@
 #
 ###################
 import math
-def main():
+def prompt():
     print("------------------------------------------------------------")
     print("PYTHON PROGRAM TO FIND VOLUME AND SURFACE AREA OF A CYLINDER")
     print("------------------------------------------------------------")
@@ -27,4 +27,5 @@ def main():
     print("Top or Bottom Surface Area of a Cylinder =",round(topbotarea,2))
     print("------------------------------------------------------------")
 
-main()
+if __name__ == '__main__':
+    prompt()

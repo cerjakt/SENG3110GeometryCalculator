@@ -10,7 +10,7 @@
 #
 ###################
 import math
-def main():
+def prompt():
     print("----------------------------------------------------------")
     print("PYTHON PROGRAM TO FIND VOLUME AND SURFACE AREA OF A CUBOID")
     print("----------------------------------------------------------")
@@ -26,4 +26,5 @@ def main():
     print("The Lateral Surface Area of a Cuboid =",'%.2f' % (latsurfarea))
     print("----------------------------------------------------------")
 
-main()
+if __name__ == '__main__':
+    prompt()

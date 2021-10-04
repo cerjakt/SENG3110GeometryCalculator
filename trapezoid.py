@@ -10,7 +10,7 @@
 #
 ###################
 import math
-def main():
+def prompt():
     print("-----------------------------------------------------")
     print("PYTHON PROGRAM TO FIND AREA AND MEDIAN OF A TRAPEZOID")
     print("-----------------------------------------------------")
@@ -24,4 +24,5 @@ def main():
     print("The Median of a Trapezoid =",'%.2f' % (median))
     print("-----------------------------------------------------")
 
-main()
+if __name__ == '__main__':
+    prompt()

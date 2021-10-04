@@ -10,7 +10,7 @@
 #
 ###################
 import math
-def main():
+def prompt():
     print("--------------------------------------------------------")
     print("PYTHON PROGRAM TO FIND VOLUME AND SURFACE AREA OF A CUBE")
     print("--------------------------------------------------------")
@@ -25,4 +25,5 @@ def main():
     print("Lateral Surface Area of a Cube =",'%.2f' % (latsurfarea))
     print("--------------------------------------------------------")
 
-main()
+if __name__ == '__main__':
+    prompt()

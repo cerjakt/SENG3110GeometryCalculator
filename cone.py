@@ -10,7 +10,7 @@
 #
 ###################
 import math
-def main():
+def prompt():
     print("--------------------------------------------------------")
     print("PYTHON PROGRAM TO FIND VOLUME AND SURFACE AREA OF A CONE")
     print("--------------------------------------------------------")
@@ -27,4 +27,5 @@ def main():
     print("The Lateral Surface Area of a Cone =",round(latsurfarea,2))
     print("--------------------------------------------------------")
 
-main()
+if __name__ == '__main__':
+    prompt()

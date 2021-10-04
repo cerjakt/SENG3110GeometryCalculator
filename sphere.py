@@ -9,7 +9,7 @@
 #
 ###################
 import math
-def main():
+def prompt():
     print("----------------------------------------------------------")
     print("PYTHON PROGRAM TO FIND VOLUME AND SURFACE AREA OF A SPHERE")
     print("----------------------------------------------------------")
@@ -20,4 +20,5 @@ def main():
     print("The Volume of a Sphere =",round(volume,2))
     print("----------------------------------------------------------")
 
-main()
+if __name__ == '__main__':
+    prompt()
