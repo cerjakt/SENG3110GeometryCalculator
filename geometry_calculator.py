@@ -10,7 +10,8 @@ import triangle
 def main():
 
     while True:
-        print("\nGeometry Program\n")
+        print("\nGeometry Program")
+        print("----------------")
         print("1. Cone")
         print("2. Cube")
         print("3. Cuboid")
@@ -38,8 +39,8 @@ def main():
         elif selection == 8:
             triangle.prompt()
         if selection == 0:
-            print("\nProgram Terminating...\n")
+            print("\nTerminating Program...\n")
             break
-
+        
 if __name__ == '__main__':
     main()
