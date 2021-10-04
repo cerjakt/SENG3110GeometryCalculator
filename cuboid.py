@@ -19,12 +19,15 @@ def prompt():
     height = eval(input("Please Enter the Height: "))
     print()
     surfarea = (2 * (length * height)) + (2 * (width * height)) + (2 * (length * width))
-    volume = (length) * (width) * (height)
     latsurfarea = 2 * (length + width) * (height)
     print("The Surface Area of a Cuboid =",'%.2f' % (surfarea))
-    print("The Volume of a Cuboid =",'%.2f' % (volume))
+    print("The Volume of a Cuboid = ", volume(length, width, height))
     print("The Lateral Surface Area of a Cuboid =",'%.2f' % (latsurfarea))
     print("----------------------------------------------------------")
+
+def volume(length, width, height):
+    volume = (length) * (width) * (height)
+    return volume
 
 if __name__ == '__main__':
     prompt()

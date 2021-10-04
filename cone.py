@@ -19,13 +19,17 @@ def prompt():
     print()
     slant = math.sqrt(radius**2 + height**2)
     surfarea = ((math.pi) * (radius)) * ((radius) + math.sqrt((height)**2 + (radius)**2))
-    volume = (math.pi) * (radius)**2 * (height/3)
+    #volume = (math.pi) * (radius)**2 * (height/3)
     latsurfarea = ((math.pi) * (radius)) * math.sqrt((height)**2 + (radius)**2)
     print("Length of a Side (Slant) of a Cone =",round(slant,2))
     print("The Surface Area of a Cone =",round(surfarea,2))
-    print("The Volume of a Cone =",round(volume,2))
+    print("The Volume of a Cone = ", volume(radius, height))
     print("The Lateral Surface Area of a Cone =",round(latsurfarea,2))
     print("--------------------------------------------------------")
+
+def volume(radius, height):
+    volume = (math.pi) * (radius)**2 * (height/3)
+    return volume
 
 if __name__ == '__main__':
     prompt()

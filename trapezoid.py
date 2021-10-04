@@ -19,10 +19,13 @@ def prompt():
     height = eval(input("Please Enter the height: "))
     print()
     median = ((base1) + (base2))/2
-    area = (median) * (height)
-    print("The Area of a Trapezoid =",'%.2f' % (area))
+    print("The Area of a Trapezoid =", area(median, height))
     print("The Median of a Trapezoid =",'%.2f' % (median))
     print("-----------------------------------------------------")
+
+def area(median, height):
+    area = (median) * (height)
+    return area
 
 if __name__ == '__main__':
     prompt()

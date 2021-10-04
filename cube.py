@@ -18,12 +18,15 @@ def prompt():
     area = (side) * (side)
     print()
     surfarea = 6 * (area)
-    volume = (area) * (side)
     latsurfarea = (surfarea) - (area * 2)
     print("Surface Area of a Cube =",'%.2f' % (surfarea))
-    print("Volume of a Cube =",'%.2f' % (volume))
+    print("The Volume of a Cube = ", volume(side, area))
     print("Lateral Surface Area of a Cube =",'%.2f' % (latsurfarea))
     print("--------------------------------------------------------")
+
+def volume(side, area):
+    volume = (area) * (side)
+    return volume
 
 if __name__ == '__main__':
     prompt()

@@ -15,10 +15,13 @@ def prompt():
     print("----------------------------------------------------------")
     radius = eval(input("Please Enter the Radius: "))
     surfarea = 4 * (math.pi) * (radius)**2
-    volume = (4/3) * (math.pi) * (radius)**3
-    print("The Surface Area of a Sphere =",round(surfarea,2))
-    print("The Volume of a Sphere =",round(volume,2))
+    print("The Surface Area of a Sphere =", round(surfarea,2))
+    print("The Volume of a Sphere = ", volume(radius))
     print("----------------------------------------------------------")
+
+def volume(radius):
+    volume = (4/3) * (math.pi) * (radius)**3
+    return volume
 
 if __name__ == '__main__':
     prompt()

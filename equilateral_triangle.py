@@ -16,15 +16,18 @@ def prompt():
     print("--------------------------------------------------------------------")
     side = eval(input("Please Enter the Length of any Side of an Equilateral Triangle: "))
     print()
-    area = (math.sqrt(3)/4) * ((side)**2)
     perimeter = 3 * (side)
     semiperimeter = perimeter/2
     altitude = (1/2) * math.sqrt(3) * (side)
-    print("Area of an Equilateral Triangle =",'%.2f' % (area))
+    print("Area of an Equilateral Triangle = ", area(side))
     print("Perimeter of an Equilateral Triangle =",'%.2f' % (perimeter))
     print("Semi Perimeter of an Equilateral Triangle =",'%.2f' % (semiperimeter))
     print("Altitude of an Equilateral Triangle =",'%.2f' % (altitude))
     print("--------------------------------------------------------------------")
+
+def area(side):
+    area = (math.sqrt(3)/4) * ((side)**2)
+    return area
 
 if __name__ == '__main__':
     prompt()

@@ -20,11 +20,14 @@ def prompt():
     print()
     perimeter = (side1) + (side2) + (side3)
     semiperimeter = (perimeter/2)
-    area = ((side1) * (side2))/2
     print("The Perimeter of a Triangle =",'%.2f' % (perimeter))
     print("The Semi Perimeter of a Triangle =",'%.2f' % (semiperimeter))
-    print("The Area of a Triangle =",'%.2f' % (area))
+    print("The Area of a Triangle =", area(side1, side2))
     print("-------------------------------------------------------")
+
+def area(side1, side2):
+    area = ((side1) * (side2))/2
+    return area
 
 if __name__ == '__main__':
     prompt()
